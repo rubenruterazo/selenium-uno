@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.selenium_uno.SearchTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-03T15:00:54" hostname="ubuntu" time="12.322">
+  <properties/>
+  <testcase name="googlecookies()" classname="com.example.selenium_uno.SearchTest" time="12.322"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1612364454734	geckodriver	INFO	Listening on 127.0.0.1:26011
+1612364454759	mozrunner::runner	INFO	Running command: "/usr/lib/firefox/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileh74ubd"
+*** You are running in headless mode.
+
+(firefox:13895): GLib-GObject-WARNING **: 16:00:55.531: invalid (NULL) pointer instance
+
+(firefox:13895): GLib-GObject-CRITICAL **: 16:00:55.533: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:14153): GLib-GObject-WARNING **: 16:00:56.661: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:14153): GLib-GObject-CRITICAL **: 16:00:56.662: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:14172): GLib-GObject-WARNING **: 16:00:57.087: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:14172): GLib-GObject-CRITICAL **: 16:00:57.087: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:14230): GLib-GObject-WARNING **: 16:01:00.496: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:14230): GLib-GObject-CRITICAL **: 16:01:00.497: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1612364460918	Marionette	INFO	Listening on port 40723
+1612364461045	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 03, 2021 4:01:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1612364465494	Marionette	INFO	Stopped listening on port 40723
+]]></system-err>
+</testsuite>
