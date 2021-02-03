@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">41.829s</div>
+<div class="counter">48.753s</div>
 <p>duration</p>
 </div>
 </td>
@@ -82,17 +82,17 @@
 </thead>
 <tr>
 <td class="success">robotAgeTest()</td>
-<td class="success">14.267s</td>
+<td class="success">17.097s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">robotOrderReviewTest()</td>
-<td class="success">11.989s</td>
+<td class="success">19.657s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">robotTest()</td>
-<td class="success">15.573s</td>
+<td class="success">11.999s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -107,94 +107,39 @@
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>1612364467104	geckodriver	INFO	Listening on 127.0.0.1:24729
-1612364467149	mozrunner::runner	INFO	Running command: &quot;/usr/lib/firefox/firefox&quot; &quot;--marionette&quot; &quot;-headless&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;/tmp/rust_mozprofileF16KIg&quot;
-*** You are running in headless mode.
-
-(firefox:14293): GLib-GObject-WARNING **: 16:01:09.552: invalid (NULL) pointer instance
-
-(firefox:14293): GLib-GObject-CRITICAL **: 16:01:09.552: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-
-(/usr/lib/firefox/firefox:14558): GLib-GObject-WARNING **: 16:01:10.703: invalid (NULL) pointer instance
-
-(/usr/lib/firefox/firefox:14558): GLib-GObject-CRITICAL **: 16:01:10.703: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-
-(/usr/lib/firefox/firefox:14577): GLib-GObject-WARNING **: 16:01:11.057: invalid (NULL) pointer instance
-
-(/usr/lib/firefox/firefox:14577): GLib-GObject-CRITICAL **: 16:01:11.057: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new Error(&quot;&quot;, &quot;(unknown module)&quot;))
-
-(/usr/lib/firefox/firefox:14636): GLib-GObject-WARNING **: 16:01:13.840: invalid (NULL) pointer instance
-
-(/usr/lib/firefox/firefox:14636): GLib-GObject-CRITICAL **: 16:01:13.840: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-1612364474189	Marionette	INFO	Listening on port 36749
-1612364474323	Marionette	WARN	TLS certificate errors will be ignored for this session
-Feb 03, 2021 4:01:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+<pre>[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 11 - let's create a new webdriver
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: /home/viewadmin/selenium-uno/build/downloads/1612366638747_26761_11
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.29.0 (resolved driver for Firefox 84)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as /home/viewadmin/.cache/selenium/geckodriver/linux64/0.29.0/geckodriver
+[Test worker] INFO com.codeborne.selenide.webdriver.AbstractDriverFactory - Write webdriver logs to: /home/viewadmin/selenium-uno/build/reports/tests/webdriver.1612366641507_26761_11.log
+Feb 03, 2021 4:37:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1612364478263	Marionette	INFO	Stopped listening on port 36749
-1612364479085	geckodriver	INFO	Listening on 127.0.0.1:5138
-1612364479111	mozrunner::runner	INFO	Running command: &quot;/usr/lib/firefox/firefox&quot; &quot;--marionette&quot; &quot;-headless&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;/tmp/rust_mozprofileO8uTlL&quot;
-*** You are running in headless mode.
-
-(firefox:14691): GLib-GObject-WARNING **: 16:01:19.768: invalid (NULL) pointer instance
-
-(firefox:14691): GLib-GObject-CRITICAL **: 16:01:19.768: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-
-(/usr/lib/firefox/firefox:14945): GLib-GObject-WARNING **: 16:01:20.598: invalid (NULL) pointer instance
-
-(/usr/lib/firefox/firefox:14945): GLib-GObject-CRITICAL **: 16:01:20.598: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-
-(/usr/lib/firefox/firefox:14965): GLib-GObject-WARNING **: 16:01:20.832: invalid (NULL) pointer instance
-
-(/usr/lib/firefox/firefox:14965): GLib-GObject-CRITICAL **: 16:01:20.836: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new Error(&quot;&quot;, &quot;(unknown module)&quot;))
-
-(/usr/lib/firefox/firefox:15048): GLib-GObject-WARNING **: 16:01:25.151: invalid (NULL) pointer instance
-
-(/usr/lib/firefox/firefox:15048): GLib-GObject-CRITICAL **: 16:01:25.151: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-
-(/usr/lib/firefox/firefox:15047): GLib-GObject-WARNING **: 16:01:25.182: invalid (NULL) pointer instance
-
-(/usr/lib/firefox/firefox:15047): GLib-GObject-CRITICAL **: 16:01:25.182: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-1612364485349	Marionette	INFO	Listening on port 39203
-1612364485494	Marionette	WARN	TLS certificate errors will be ignored for this session
-Feb 03, 2021 4:01:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=firefox Version=84.0.2 Platform=LINUX
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 5.16.2
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Create webdriver in current thread 11: FirefoxDriver -&gt; FirefoxDriver: firefox on LINUX (afd4c22a-9668-4a9f-8004-1fadfdca2802)
+[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - Webdriver has been closed meanwhile. Let's re-create it.
+[Test worker] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Close webdriver: 11 -&gt; FirefoxDriver: firefox on LINUX (null)...
+[Test worker] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Closed webdriver 11 in 5 ms
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: /home/viewadmin/selenium-uno/build/downloads/1612366657800_26761_11
+[Test worker] INFO com.codeborne.selenide.webdriver.AbstractDriverFactory - Write webdriver logs to: /home/viewadmin/selenium-uno/build/reports/tests/webdriver.1612366657809_26761_11.log
+Feb 03, 2021 4:37:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1612364492126	Marionette	INFO	Stopped listening on port 39203
-
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-1612364493433	geckodriver	INFO	Listening on 127.0.0.1:17011
-1612364493561	mozrunner::runner	INFO	Running command: &quot;/usr/lib/firefox/firefox&quot; &quot;--marionette&quot; &quot;-headless&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;/tmp/rust_mozprofile2pXnCT&quot;
-*** You are running in headless mode.
-
-(firefox:15144): GLib-GObject-WARNING **: 16:01:34.677: invalid (NULL) pointer instance
-
-(firefox:15144): GLib-GObject-CRITICAL **: 16:01:34.678: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-
-(/usr/lib/firefox/firefox:15396): GLib-GObject-WARNING **: 16:01:35.727: invalid (NULL) pointer instance
-
-(/usr/lib/firefox/firefox:15396): GLib-GObject-CRITICAL **: 16:01:35.727: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-
-(/usr/lib/firefox/firefox:15416): GLib-GObject-WARNING **: 16:01:36.062: invalid (NULL) pointer instance
-
-(/usr/lib/firefox/firefox:15416): GLib-GObject-CRITICAL **: 16:01:36.062: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-console.warn: SearchSettings: &quot;get: No settings file exists, new profile?&quot; (new Error(&quot;&quot;, &quot;(unknown module)&quot;))
-
-(/usr/lib/firefox/firefox:15470): GLib-GObject-WARNING **: 16:01:40.545: invalid (NULL) pointer instance
-
-(/usr/lib/firefox/firefox:15470): GLib-GObject-CRITICAL **: 16:01:40.545: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-1612364501179	Marionette	INFO	Listening on port 33505
-1612364501296	Marionette	WARN	TLS certificate errors will be ignored for this session
-Feb 03, 2021 4:01:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=firefox Version=84.0.2 Platform=LINUX
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 5.16.2
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Create webdriver in current thread 11: FirefoxDriver -&gt; FirefoxDriver: firefox on LINUX (45fdee95-ec19-40e1-b336-319522e8fd69)
+[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - Webdriver has been closed meanwhile. Let's re-create it.
+[Test worker] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Close webdriver: 11 -&gt; FirefoxDriver: firefox on LINUX (null)...
+[Test worker] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Closed webdriver 11 in 0 ms
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: /home/viewadmin/selenium-uno/build/downloads/1612366674923_26761_11
+[Test worker] INFO com.codeborne.selenide.webdriver.AbstractDriverFactory - Write webdriver logs to: /home/viewadmin/selenium-uno/build/reports/tests/webdriver.1612366674923_26761_11.log
+Feb 03, 2021 4:38:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1612364507442	Marionette	INFO	Stopped listening on port 33505
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=firefox Version=84.0.2 Platform=LINUX
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 5.16.2
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Create webdriver in current thread 11: FirefoxDriver -&gt; FirefoxDriver: firefox on LINUX (d2b5e537-7048-4615-922f-0e116569a84a)
 </pre>
 </span>
 </div>
@@ -206,7 +151,7 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.7.1</a> at Feb 3, 2021, 4:01:49 PM</p>
+<a href="http://www.gradle.org">Gradle 6.7.1</a> at Feb 3, 2021, 4:38:07 PM</p>
 </div>
 </div>
 </body>

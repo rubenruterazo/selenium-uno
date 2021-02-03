@@ -1,6 +1,7 @@
 package com.example.selenium_uno;
 
 
+import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,15 +12,18 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+
 public class SearchTest {
     private WebDriver driver;
     private Map<String, Object> vars;
     JavascriptExecutor js;
     @BeforeEach
     public void setUp() {
-        FirefoxOptions options=new FirefoxOptions();
-        options.setHeadless(true);
-        driver = new FirefoxDriver(options);
+        Configuration.startMaximized = true;
+        open("about:blank");
+        driver = getWebDriver();
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
     }

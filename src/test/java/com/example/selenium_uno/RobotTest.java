@@ -1,5 +1,6 @@
 package com.example.selenium_uno;
 
+import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -12,6 +13,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+
 public class RobotTest {
     private WebDriver driver;
     private Map<String, Object> vars;
@@ -19,9 +23,10 @@ public class RobotTest {
 
     @BeforeEach
     public void setUp() {
-        FirefoxOptions options=new FirefoxOptions();
-        options.setHeadless(true);
-        driver = new FirefoxDriver(options);
+        Configuration.startMaximized = true;
+        open("about:blank");
+        driver = getWebDriver();
+        //driver = new FirefoxDriver(options);
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
     }
