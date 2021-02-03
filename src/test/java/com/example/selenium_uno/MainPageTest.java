@@ -27,7 +27,7 @@ public class MainPageTest {
         Configuration.startMaximized = true;
         open("https://www.jetbrains.com/");
     }
-
+/*
     @Test
     public void search() {
         mainPage.searchButton.click();
@@ -36,7 +36,7 @@ public class MainPageTest {
         $(byXpath("//button[@type='submit' and text()='Search']")).click();
 
         $(byClassName("js-search-input")).shouldHave(attribute("value", "Selenium"));
-    }
+    }*/
 /*
     @Test
     public void toolsMenu() {
