@@ -15,11 +15,11 @@ pipeline {
                     
                 } 
             }
-            post {
+            /*post {
                 success {
                     archiveArtifacts 'build/libs/*.jar'
                 }
-            }
+            }*/
         }
         stage('Test') {
             steps {
