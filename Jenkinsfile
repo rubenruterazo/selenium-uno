@@ -25,19 +25,12 @@ pipeline {
             steps {
                 withGradle{
                     sh './gradlew clean test'
-                    sh 'ls build/'
-                    sh 'ls build/jacoco/'
                 }  
             }
             post {
                 always {
                     junit 'build/test-results/test/TEST-*.xml'
-                    jacoco( 
-                        execPattern: 'build/*/*.exec',
-                        classPattern: 'build/classes',
-                        sourcePattern: 'src/main/java',
-                        exclusionPattern: 'src/test*'
-                    )
+                   
                 }
             }
         }
