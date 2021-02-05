@@ -21,12 +21,36 @@ pipeline {
                 }
             }
         }
-        stage('Test') {
+        stage('TestFirefox') {
             steps {
                 withGradle{
                     sh './gradlew clean test -Dbrowser=firefox'
-                    sh './gradlew test -Dbrowser=chrome'
-                    sh './gradlew test -Dbrowser=operablink'
+                }  
+            }
+            post {
+                always {
+                    junit 'build/test-results/test/TEST-*.xml'
+                    //archiveArtifacts 'build/reports/*'
+                }
+            }
+        }
+        stage('TestChrome') {
+            steps {
+                withGradle{
+                    sh './gradlew clean test -Dbrowser=chrome'
+                }  
+            }
+            post {
+                always {
+                    junit 'build/test-results/test/TEST-*.xml'
+                    //archiveArtifacts 'build/reports/*'
+                }
+            }
+        }
+        stage('TestOpera') {
+            steps {
+                withGradle{
+                    sh './gradlew clean test -Dbrowser=operablink'
                 }  
             }
             post {
