@@ -27,10 +27,12 @@ public class RoboTestHub {
 
     @BeforeEach
     public void setUp() throws MalformedURLException {
-
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setBrowserName(System.getProperty("browser"));
         Configuration.startMaximized = true;
         open("about:blank");
-        driver = new RemoteWebDriver(new URL("http://localhost:4444"), DesiredCapabilities.operaBlink());
+        driver = new RemoteWebDriver(new URL("http://localhost:4444"),capabilities);
+
         //driver = new FirefoxDriver(options);
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
