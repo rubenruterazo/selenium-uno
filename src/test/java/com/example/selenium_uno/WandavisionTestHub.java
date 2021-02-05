@@ -31,9 +31,10 @@ public class WandavisionTestHub {
   private WebDriver driver;
   private Map<String, Object> vars;
   JavascriptExecutor js;
+  DesiredCapabilities capabilities = new DesiredCapabilities();
   @BeforeEach
   public void setUp() throws MalformedURLException {
-    DesiredCapabilities capabilities = new DesiredCapabilities();
+    
     capabilities.setBrowserName(System.getProperty("browser"));
     Configuration.startMaximized = true;
     open("about:blank");
