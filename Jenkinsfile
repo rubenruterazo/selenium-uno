@@ -24,7 +24,7 @@ pipeline {
         stage('Test') {
             steps {
                 withGradle{
-                    sh './gradlew clean test -Dbrowser=firefox'
+                    sh './gradlew clean test'
                 }  
             }
             post {
