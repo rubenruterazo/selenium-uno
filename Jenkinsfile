@@ -25,6 +25,8 @@ pipeline {
             steps {
                 withGradle{
                     sh './gradlew clean test -Dbrowser=firefox'
+                    sh './gradlew test -Dbrowser=chrome'
+                    sh './gradlew test -Dbrowser=operablink'
                 }  
             }
             post {
