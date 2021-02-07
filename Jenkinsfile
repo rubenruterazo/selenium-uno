@@ -34,5 +34,20 @@ pipeline {
                 }
             }
         }
+        stage('Check') {
+            steps {
+                withGradle{
+                    sh './gradlew check'
+                }
+            }
+            post {
+                always {
+                    recordIssues(
+                            enabledForFailure: true, aggregatingResults: true,
+                            tools: [java(), checkStyle(pattern: 'build/reports/checkstyle/*.xml', reportEncoding: 'UTF-8')]
+                    )
+                }
+            }
+        }
     }
 }
