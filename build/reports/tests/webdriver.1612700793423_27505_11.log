@@ -1,0 +1,49 @@
+1612700794256	geckodriver	INFO	Listening on 127.0.0.1:9031
+1612700795300	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileiwUgGm"
+*** You are running in headless mode.
+
+(firefox:27588): GLib-GObject-WARNING **: 13:26:36.405: invalid (NULL) pointer instance
+
+(firefox:27588): GLib-GObject-CRITICAL **: 13:26:36.406: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:27646): GLib-GObject-WARNING **: 13:26:37.732: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:27646): GLib-GObject-CRITICAL **: 13:26:37.732: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:27669): GLib-GObject-WARNING **: 13:26:38.099: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:27669): GLib-GObject-CRITICAL **: 13:26:38.099: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:27731): GLib-GObject-WARNING **: 13:26:40.549: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:27731): GLib-GObject-CRITICAL **: 13:26:40.549: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1612700800694	Marionette	INFO	Listening on port 37265
+1612700800794	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: uncaught exception: undefined
+1612700818202	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1612700820718	Marionette	INFO	Stopped listening on port 37265
+JavaScript error: https://m.media-amazon.com/images/S/sash/wDqcPWN-$punknn.js, line 94: NS_ERROR_NOT_INITIALIZED: 
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

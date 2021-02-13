@@ -1,0 +1,16 @@
+1612700945614	geckodriver	INFO	Listening on 127.0.0.1:7438
+1612700945645	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyo4naG"
+*** You are running in headless mode.
+
+(firefox:30111): GLib-GObject-WARNING **: 13:29:06.578: invalid (NULL) pointer instance
+
+(firefox:30111): GLib-GObject-CRITICAL **: 13:29:06.578: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:30187): GLib-GObject-WARNING **: 13:29:07.964: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:30187): GLib-GObject-CRITICAL **: 13:29:07.964: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:30211): GLib-GObject-WARNING **: 13:29:08.494: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:30211): GLib-GObject-CRITICAL **: 13:29:08.495: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
